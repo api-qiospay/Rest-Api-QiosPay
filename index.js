@@ -77,7 +77,7 @@ app.use((req, res, next) => {
       req.path !== '/set'
     ) {
       return originalJson.call(this, {
-        creator: settings.creatorName || "Created Using Qiospay DEV",
+        creator: settings.creatorName || "Created Using Qiospay",
         ...data
       });
     }
