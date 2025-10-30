@@ -59,11 +59,11 @@ try {
 
 global.totalreq = 0;
 const settings = {
-  creatorName: "FR3-NEWERA",
-  whatsappLink: "https://t.me/fr3newera",
-  apiTitle: "FR3 Api's",
-  githubLink: "https://NvidiaFR3",
-  instagramLink: "https://instagram.com/rendyindrapratama3"
+  creatorName: "QIOSPAYMENT",
+  whatsappLink: "https://t.me/qiospayment",
+  apiTitle: "Qiospay Api's",
+  githubLink: "#",
+  instagramLink: "#"
 };
 
 app.use((req, res, next) => {
@@ -77,7 +77,7 @@ app.use((req, res, next) => {
       req.path !== '/set'
     ) {
       return originalJson.call(this, {
-        creator: settings.creatorName || "Created Using FR3 DEV",
+        creator: settings.creatorName || "Created Using Qiospay DEV",
         ...data
       });
     }
